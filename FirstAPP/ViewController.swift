@@ -20,12 +20,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //Adder function
     @IBAction func TouchUpInside(_ sender: Any) {
         
         count += 1
         Label.text = String(count)  //adder
     }
     
+    //Subtractor fuction
     @IBAction func Subtract(_ sender: Any) {
         
         count -= 1
