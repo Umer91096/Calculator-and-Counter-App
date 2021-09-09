@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDid Load")
         // Do any additional setup after loading the view.
     }
 
@@ -34,6 +35,31 @@ class ViewController: UIViewController {
         Label.text = String(count)  //subtractor
     }
     
+    
+    
+    @IBAction func onGoButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "openCalculator", sender: self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        print("viewDidAppear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        print("viewWillAppear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool)
+    {
+        print("viewDidDisappear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        print("viewWillDisappear")
+    }
     
 }
 
