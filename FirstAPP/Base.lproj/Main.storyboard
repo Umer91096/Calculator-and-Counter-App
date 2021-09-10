@@ -69,6 +69,13 @@
                                     <action selector="TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NX-cT-AV1"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calculator" translatesAutoresizingMaskIntoConstraints="NO" id="7li-ru-O1M" userLabel="Calculator">
+                                <rect key="frame" x="167" y="108" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="a9Y-RO-WMH"/>
+                                    <constraint firstAttribute="height" constant="80" id="jfH-lC-7II"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,7 +91,9 @@
                             <constraint firstItem="huA-Pg-nMv" firstAttribute="top" secondItem="Bc8-6o-Jdd" secondAttribute="bottom" priority="800" constant="50" id="QJN-4U-E7K"/>
                             <constraint firstItem="odw-8A-4Lg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T6Z-r0-Pu5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="odw-8A-4Lg" secondAttribute="trailing" constant="20" id="e9w-md-6yh"/>
+                            <constraint firstItem="7li-ru-O1M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwa-Ym-t9X"/>
                             <constraint firstItem="ObM-IW-UbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lsc-e4-6xQ"/>
+                            <constraint firstItem="7li-ru-O1M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="q7O-gO-eFO"/>
                             <constraint firstItem="Bc8-6o-Jdd" firstAttribute="leading" secondItem="ObM-IW-UbQ" secondAttribute="trailing" constant="8" id="zGS-03-mfU"/>
                         </constraints>
                     </view>
@@ -96,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508.69565217391306" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-568.1159420289855" y="-108.48214285714285"/>
         </scene>
         <!--Calculator View Controller-->
         <scene sceneID="xnk-BS-fWi">
@@ -440,10 +449,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05Y-i9-nLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="98"/>
+            <point key="canvasLocation" x="143" y="-108"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Calculator" width="16" height="16"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

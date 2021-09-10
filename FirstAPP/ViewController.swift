@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Add: UIButton!
     @IBOutlet weak var Subtract: UIButton!
     @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
   
     var count = 0
     
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
-        print("viewDidAppear")
+        
     }
     
     override func viewWillAppear(_ animated: Bool)
